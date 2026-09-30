@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌱 EduGenie 🧠✨</h1>
+    <p class="subtitle">Your personal AI tutor for learning support!</p>
+
+
+    <!-- ASK QUESTION -->
+    <div class="card">
+        <h3>Ask EduGenie a Question:</h3>
+
+        <div class="row">
+            <input id="question"
+                   type="text"
+                   placeholder="Why is the sky blue?">
+
+            <button onclick="askQuestion()">Get Answer</button>
+        </div>
+
+        <div id="answer" class="result"></div>
+    </div>
+
+
+    <!-- EXPLANATION -->
+    <div class="card">
+        <h3>Need an Explanation?</h3>
+
+        <div class="row">
+            <input id="topic"
+                   type="text"
+                   placeholder="Photosynthesis">
+
+            <button onclick="explainTopic()">Explain</button>
+        </div>
+
+        <div id="explanation" class="result"></div>
+    </div>
+
+
+    <!-- SUMMARY -->
+    <div class="card">
+        <h3>Summarize a Paragraph:</h3>
+
+        <div class="row">
+            <input id="summaryText"
+                   type="text"
+                   placeholder="Paste long content to summarize">
+
+            <button onclick="summarizeText()">Summarize</button>
+        </div>
+
+        <div id="summary" class="result"></div>
+    </div>
+
+
+    <!-- QUIZ -->
+    <div class="card">
+        <h3>Generate a Quiz:</h3>
+
+        <div class="row">
+            <input id="quizTopic"
+                   type="text"
+                   placeholder="Pythagoras theorem">
+
+            <button type="button" onclick="generatequiz">Generate Quiz</button>
+        </div>
+
+        <div id="quiz" class="result"></div>
+    </div>
+
+
+    <!-- LEARNING RECOMMENDATIONS -->
+    <div class="card">
+        <h3>Get Learning Recommendations:</h3>
+
+        <div class="row">
+            <input id="learningSubject"
+                   type="text"
+                   placeholder="e.g. SQL, Python, Biology">
+
+            <button onclick="getRecommendations()">
+                Get Recommendations
+            </button>
+        </div>
+
+        <div id="recommendations" class="result"></div>
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
